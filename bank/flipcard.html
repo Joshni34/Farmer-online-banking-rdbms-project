@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color:green;
+        }
+
+        .flip-card {
+            background-color: silver;
+            text-decoration-line: none;
+            width: 215px;
+            height: 215px;
+            perspective: 1000px;
+        }
+
+        .flip-card-inner {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            transition: transform 0.6s;
+            transform-style: preserve-3d;
+            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+        }
+
+        .flip-card:hover .flip-card-inner {
+            transform: rotateY(180deg);
+        }
+
+        .flip-card-front, .flip-card-back {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            backface-visibility: hidden;
+        }
+
+        .flip-card-front {
+            background-color: white;
+            color: black;
+        }
+
+        .flip-card-back {
+            text-decoration-line: none;
+            background-color: aqua;
+            color: black;
+            transform: rotateY(180deg);
+        }
+        .flip-card-back button a{
+            text-decoration-line: none;
+            font-weight: bold;
+        }
+        .grid-container{
+            display: grid;
+            grid-template-columns: repeat(3,3fr);
+            column-gap: 70px;
+            grid-gap:35px
+
+        }
+        .button{
+
+        }
+
+    </style>
+</head>
+<body>
+
+<div class = "grid-container">
+<div class="flip-card">
+    <div class="flip-card-inner">
+        <div class="flip-card-front">
+            <h2>Create SB Account</h2>
+            <img src="Savingaccount.jpg" alt="Avatar" style="width:100px;height:100px;">
+        </div>
+        <div class="flip-card-back">
+            <h1>creates SB account for farmers</h1>
+              <button><a href="login.php">CREATE ACCOUNT</a></button> 
+            
+        </div>
+    </div>
+</div>
+    <div class="flip-card">
+        <div class="flip-card-inner">
+            <div class="flip-card-front">
+                <h2>Creates 108 Account</h2>
+                <img src="abc.png" alt="Avatar" style="width:110px;height:110px;">
+            </div>
+            <div class="flip-card-back">
+                <h1>creates 108 account for farmers</h1>
+                     <button><a href="login1.php">CREATE ACCOUNT</a></button>           
+            </div>
+        </div>
+    </div>
+    <div class="flip-card">
+        <div class="flip-card-inner">
+            <div class="flip-card-front">
+                <h2>Deposit SB Account</h2>
+                <img src="deposit.jpg" alt="Avatar" style="width:100px;height:100px;">
+            </div>
+            <div class="flip-card-back">
+                <h1>Deposits amount to your SB Account </h1>
+                <button><a href="depositsb.php">DEPOSIT</a></button> 
+            </div>
+        </div>
+    </div>
+    <div class="flip-card">
+        <div class="flip-card-inner">
+            <div class="flip-card-front">
+                <h2>Deposit 108 Account </h2>
+                <img src="deposit1.jpg" alt="Avatar" style="width:100px;height:100px;">
+            </div>
+            <div class="flip-card-back">
+                <h1>deposits amount to your 108 Account</h1>
+                <button><a href="deposit108.php">DEPOSIT</a></button>
+            </div>
+        </div>
+    </div>
+    <div class="flip-card">
+        <div class="flip-card-inner">
+            <div class="flip-card-front">
+                <h2>Transfer From SB Account</h2>
+                <img src="withdraw1.jpg" alt="Avatar" style="width:100px;height:100px;">
+            </div>
+            <div class="flip-card-back">
+                <h1>Transfers amount from your SB Account</h1>
+                <button><a href="transfersb.php">TRANSFER</a></button>
+            </div>
+        </div>
+    </div>
+    <div class="flip-card">
+        <div class="flip-card-inner">
+            <div class="flip-card-front">
+                <h2>Transfers From 108 Account</h2>
+                <img src="abc3.jpg" alt="Avatar" style="width:100px;height:100px;">
+            </div>
+            <div class="flip-card-back">
+                <h1>Transfers amount from 108 account</h1>
+               <button><a href="transfer108.php">TRANSFER</a></button>
+            </div>
+        </div>
+    </div>
+    <div class="flip-card">
+        <div class="flip-card-inner">
+            <div class="flip-card-front">
+                <h1>View Account</h1>
+                <img src="vii.jpg" alt="Avatar" style="width:100px;height:100px;">
+            </div>
+            <div class="flip-card-back">
+
+                <h1>Possible to view your account</h1>
+                <button><a href="disp1.php">VIEW ACCOUNT</a></button>      
+                
+            </div>
+        </div>
+    </div>
+   
+    
+
+</div>
+
+</body>
+</html>
